@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://images.pexels.com/photos/3772630/pexels-photo-3772630.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+}
+.nav__header nav{
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__header nav h1{
+    color: #fff;
+    font-size: 30px;
+}
+.nav__header nav h1 span, .text__holder h1 span, .footer h2 span{
+    color: #d6b80def;
+}
+.nav__header nav ul{
+    display: flex;
+    gap: 30px;
+}
+.nav__header nav ul li{
+    list-style: none;
+    padding: 0 10px;
+    font-weight: 500;
+}
+.nav__header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+.nav__header nav ul li a:hover{
+    border-bottom: 1px solid #3498db;
+}
+.text__holder{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.text__holder .p1{
+    color: #d6b80def;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.text__holder h1{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    width:600px;
+    text-transform: capitalize;
+}
+.text__holder .down2{
+    margin-top: -20px;
+}
+.text__holder .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.text__holder .p2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+.footer{
+      display: flex;
+      padding: 120px 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer-p1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.footer h2{
+    color: #fff;
+    font-weight: 600;
+}
+.lorem{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 900px;
+    
+}
+.lorem p{
+    color: #fff;
+    font-size: 13px;
+}

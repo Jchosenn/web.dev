@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    outline: none;
+}
+
+body{
+    background-color: rgba(255, 72, 0, 0.884);
+}
+.nav__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0.5rem;
+}
+nav ul{
+    background-color: #ff9800;
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+nav ul li a:hover{
+    color: #000;
+    padding: 0 0.5rem;
+}
+.game__holder{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 1.5rem 0;
+}
+.game__board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0.5rem;
+    gap: 3rem;
+}
+.player__board{
+    background-color: #ff9800;
+    padding: 1.5rem 3rem;
+    border-radius: 0 20px 20px 20px;   
+}
+.p-txt{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.score{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 650;
+}
+.player2{
+    border-radius: 20px 0 20px 20px;
+}
+.tic-tac{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: rgb(255, 218, 185, 0.999);
+    padding: 1rem;
+    border-radius: 15px;
+}
+.tic-tac button{
+    font-size: 4rem;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #ff9800;
+    color: #fff;
+    transition: 0.2s ease-out;
+    width: 90px;
+}
+.tic-tac button:hover{
+    color: #000;
+    cursor: pointer;
+}
+.gameBtn button{
+    background-color: #ff9800;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.fa{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.fa:hover{
+    color: #000;
+}
+.gameBtn button:hover{
+    color: #000;
+}
+ 
+
+@media (width > 850px){
+    .nav__header{
+    padding: 1rem 0.5rem;
+}
+    .game__board{
+    flex-direction: row;
+    padding: 1rem 0.5rem;
+    gap: 8rem;
+    }
+    .game__holder{
+    padding: 0 0 1rem 0;
+    }
+}

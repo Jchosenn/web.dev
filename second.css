@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+body{
+     background-color: #3498db;
+}
+.card__holder{
+    /* max-width: 60%; */
+    margin: auto;
+    /* height: 90dvh; */
+    border-radius: 10px;
+    padding: 10px 20px;
+    /* background-color:  #ecf0f1; */
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header p{
+    text-transform: capitalize;
+}
+.collection{
+    margin-top: 25px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 6px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.collection .description{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.collection .jacket{
+    margin-right: 20px;
+}
+.collection .description .product__name p{
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.collection .description .product__name span{
+    font-weight: 300;
+    font-size: 14px;
+}
+.collection .icon__holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    color: #3498db;
+}
+.collection .image__holder{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+.collection .image__holder img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    border-radius: 6px;
+}
+.collection .icon__holder .icon1 i{
+    font-size: 13px;
+}
+.collection .icon__holder .amount p{
+    font-weight: 600;
+}
+.total__holder{
+    background-color: #fff;
+    margin-top: 25px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.total__holder .sum-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total__holder .sum-total p{
+    font-size: 12px;
+    font-weight: 450;
+}
+.total__holder .sum-total span{
+    font-size: 13px;
+    font-weight: 600;
+}
+.total__holder .zip-code{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #f1e8e8;
+}
+.total__holder .zip-code p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.total__holder .zip-code input{
+    background-color: #ecf0f1;
+    width: 30%;
+    margin-left: -80px;
+    padding: 3px 5px;
+    font-style: italic;
+}
+.total__holder .zip-code span{
+     font-size: 12px;
+    font-weight: 600;
+}
+.total__holder .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total__holder .total p{
+    font-size: 13px;
+    font-weight: 650;
+}
+.total__holder .total span{
+    color: #3498db;
+    font-weight: 650;
+}
+.checkout{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+.checkout a{
+    padding: 5px 15px ;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(45deg,  #7ea8c4, #3498db);
+}
+.checkout a:hover{
+    color: #000;
+}
+
+
+@media(width > 850px){
+    .card__holder{
+        width: 30%;
+    }
+}
