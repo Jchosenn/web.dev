@@ -22,8 +22,9 @@ crossorigin="anonymous"
             <a href="game.html"><i class="fa fa-arrow-right"></i></a>
         </div>
         <div class="display">
-            <p class="operationBtn">=</p>
-            <p>1200</p>
+            <!-- <p class="operationBtn">=</p>
+            <p>1200</p> -->
+            <input type="text" id="display" placeholder="enter text" disabled>
         </div>
         <div class="equation">
             <p>75 <span class="operationBtn">x</span> 4 
@@ -38,8 +39,8 @@ crossorigin="anonymous"
             <button class="darkBg">8</button>
             <button class="darkBg">9</button>
             <button class="actionBtn">*</button>
-            <button class="darkBg">4</button>
-            <button class="darkBg">5</button>
+            <button class="darkBg" onclick="test()">4</button>
+            <button class="darkBg" onclick="test()">5</button>
             <button class="darkBg">6</button>
             <button class="actionBtn">-</button>
             <button class="darkBg">1</button>
@@ -48,7 +49,7 @@ crossorigin="anonymous"
             <button class="actionBtn addBtn">+</button>
             <button class="darkBg">0</button>
             <button class="darkBg">.</button>
-            <button class="actionBtn">=</button>
+            <button class="actionBtn" onclick="answer()">=</button>
         </div>
     </div>
 

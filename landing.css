@@ -17,6 +17,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .calculator__holder{
     display: flex;
     flex-direction: column;
@@ -32,7 +33,7 @@ body{
     gap: 20px;
 }
 .fa-arrow-right, .fa-arrow-left{
-    color: #3e86b6;
+    color: #50cbdb;
 }
 .display{
     width: 100%;
@@ -43,7 +44,7 @@ body{
     border-bottom: 1px solid lightgrey;
 }
 .operationBtn{
-    color: #3e86b6;
+    color: #50cbdb;
 }
 .equation{
     width: 100%;
@@ -67,8 +68,11 @@ button{
     text-align: center;
 }
 .actionBtn{
-    background-color: #3e86b6;
+    background-color: #50cbdb;
     color: #fff;
+}
+.darkBg{
+    background-color: #f3f8fe;
 }
 .addBtn{
     grid-row: span 2;
@@ -82,7 +86,7 @@ button{
 }
 
 .dark-mode .calculator__holder {
-    background-color: #021420;
+    background-color: #1b1a28;
     color: #fff;
 }
 
@@ -90,13 +94,14 @@ button{
     border-bottom: 1px solid rgb(44, 48, 49);
 }
 .dark-mode .darkBg{
-    background-color: #122f42;
+    /* background-color: #122f42; */
+    background-color: #1e2434;
     color: #fff;
 }
 .dark-mode .operationBtn {
-    color: #3e86b6;
+    color: #50cbdb;
 }
 
 .dark-mode .actionBtn {
-    background-color: #3e86b6;
+    background-color: #50cbdb;
 }
