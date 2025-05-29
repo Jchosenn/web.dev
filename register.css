@@ -56,4 +56,46 @@ button{
     color: #fff;
     border-radius: 1rem;
     font-size: 1rem;
+    cursor: pointer;
+}
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 300px;
+    width: 90%;
+}
+
+#alertMessage {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+#closeAlert {
+    background: #3e4524; /* Blue button */
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#closeAlert:hover {
+    background: #3e4534; /* Darker blue on hover */
 }

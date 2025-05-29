@@ -5,24 +5,27 @@
     font-family: "Poppins", sans-serif;
     border: none;
     outline: none;
+    text-decoration: none;
 }
 body{
     background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://images.pexels.com/photos/3772630/pexels-photo-3772630.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100dvh;
 }
 .nav__header nav{
-    padding: 30px 50px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .nav__header nav h1{
     color: #fff;
     font-size: 30px;
 }
-.nav__header nav h1 span, .text__holder h1 span, .footer h2 span{
+.nav__header nav h1 span, 
+.text__holder h1 span, 
+.footer h2 span{
     color: #d6b80def;
 }
 .nav__header nav ul{
@@ -34,6 +37,33 @@ body{
     padding: 0 10px;
     font-weight: 500;
 }
+.fa-bars{
+    font-size: 25px;
+}
+.li--div{
+    display: none;
+}
+.li__holder:hover .li--div{
+    display: block;
+    position: absolute;
+    transition: 0.3s ease;
+    /* width: 200px; */
+    right: 10px;
+    text-align: center;
+    background-color: #000;
+    border-radius: 10px;
+}
+.li__holder:hover .li--div ul{
+    display: block;
+}
+.li__holder:hover .li--div ul li{
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.hidden{
+    display: none;
+}
 .nav__header nav ul li a{
     text-decoration: none;
     color: #fff;
@@ -44,10 +74,12 @@ body{
 }
 .text__holder{
    display: flex;
+   padding: 30px 0 0 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    width: 100%;
 }
 .text__holder .p1{
     color: #d6b80def;
@@ -58,9 +90,9 @@ body{
 .text__holder h1{
     color: #fff;
     text-align: center;
-    font-size: 40px;
+    font-size: 1.7rem;
     font-weight: 700;
-    width:600px;
+    width:350px;
     text-transform: capitalize;
 }
 .text__holder .down2{
@@ -78,10 +110,11 @@ body{
 }
 .footer{
       display: flex;
-      padding: 120px 0 0 0;
+      padding: 70px 0 10px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 .footer .footer-p1{
     color: #fff;
@@ -93,13 +126,48 @@ body{
     font-weight: 600;
 }
 .lorem{
-    padding-top: 30px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 900px;
-    
+    width: 100%;
+    gap: 1rem;
 }
 .lorem p{
     color: #fff;
+    text-align: center;
     font-size: 13px;
+}
+
+@media (width > 750px){
+    body{
+        height: 100dvh;
+    }
+    .nav__header nav{
+        padding: 25px 50px;
+    }
+.hidden{
+    display: block;
+}
+.li__holder{
+    display: none;
+}
+.li--div{
+    display: none;
+}
+.li__holder:hover .li--div{
+    display: none;
+}
+.text__holder h1{
+    font-size: 2.5rem;
+    width:600px;
+}
+.lorem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 1rem;
+}
 }

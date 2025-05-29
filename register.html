@@ -16,21 +16,29 @@ crossorigin="anonymous"
 </head>
 <body>
     <div class="container">
-        <form action="login.html">
-            <h1>Register</h1>
-            <p><span>*</span>Name</p>
-            <input type="text" required>
-            <p><span>*</span>Email</p>
-            <input type="email" required>
-            <p><span>*</span>Password</p>
-            <input type="password" required>
-            <p><span>*</span>Confirm password</p>
-            <input type="password" required>
+        <form action="login.html" id="registerForm">
+            <h1 id="h1Txt">Register</h1>
+            <p class="pTxt" onclick="map()"><span>*</span>Name</p>
+            <input type="text" class="pTxt" id="nameInput">
+            <p class="pTxt2"><span>*</span>Email</p>
+            <input type="email" class="pTxt2" id="emailInput">
+            <p class="pTxt3"><span>*</span>Password</p>
+            <input type="password" class="pTxt3" id="passwordInput">
+            <p class="pTxt4"><span>*</span>Confirm password</p>
+            <input type="password" class="pTxt4" id="confirmPasswordInput">
             <div class="register">
-                <button>Register</button>
+                <button id="registerBtn">Register</button>
             </div>
         </form>
+        <div id="customAlert" class="custom-alert">
+        <div class="alert-content">
+            <p id="alertMessage">Some info is missing</p>
+            <button id="closeAlert">OK</button>
+        </div>
+    </div>
     </div>
     
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="game.js"></script>
 </body>
 </html>
