@@ -1,0 +1,122 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+} */
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://images.pexels.com/photos/9302333/pexels-photo-9302333.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .calculator__holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 3-0px;
+    padding: 40px 20px 10px 20px;
+} */
+
+/* .theme{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+} */
+
+/*  
+.fa-arrow-right, .fa-arrow-left{
+    color: #50cbdb;
+} */
+/* 
+.display{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: 650;
+    border-bottom: 1px solid lightgrey;
+} */
+
+/* .operationBtn{
+    color: #50cbdb;
+} */
+
+/* .equation{
+    width: 100%;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px 0;
+} */
+
+/* .equation p{
+    text-align: end;
+    font-style: oblique;
+} */
+
+/* .buttons{
+    width: 100%;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+} */
+
+/* button{
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+} */
+
+/* .actionBtn{
+    background-color: #50cbdb;
+    color: #fff;
+} */
+
+/* .darkBg{
+    background-color: #f3f8fe;
+} */
+
+/* .addBtn{
+    grid-row: span 2;
+} */
+
+/* .fa{
+    cursor: pointer;
+} */
+
+/* .dark-mode {
+    background-color: #000;
+    color: white;
+} */
+
+/* .dark-mode .calculator__holder {
+    background-color: #1b1a28;
+    color: #fff;
+} */
+
+/* .dark-mode .display{
+    border-bottom: 1px solid rgb(44, 48, 49);
+} */
+
+/* .dark-mode .darkBg{
+    background-color: #1e2434;
+    color: #fff;
+} */
+
+/* .dark-mode .operationBtn {
+    color: #50cbdb;
+} */
+
+/* .dark-mode .actionBtn {
+    background-color: #50cbdb;
+} */

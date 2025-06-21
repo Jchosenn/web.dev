@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <link href="./output.css" rel="stylesheet">
+       <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+    <script
+src="https://kit.fontawesome.com/1424886bf8.js"
+crossorigin="anonymous"
+></script>
+    <title>Calculator with Js</title>
+</head>
+<body>
+    <div class="calculator__holder bg-white p-4">
+        <div class="theme flex justify-center items-center gap-3">
+            <a href="vid.html"><i class="fa fa-arrow-left"></i></a>
+            <i class="fa fa-sun" id="lightModeIcon"></i>
+            <i class="fa fa-moon" id="darkModeIcon"></i>
+            <a href="game.html"><i class="fa fa-arrow-right"></i></a>
+        </div>
+        <div class="display flex justify-end">
+            <input id="display" readonly class="w-full text-2xl p-2 text-end font-semibold outline-none">
+        </div>
+        <div class="equation text-end text-2xl font-semibold">
+            <p id="sumTxt">0</p>
+        </div>
+        <div class="buttons grid grid-cols-4 gap-4 text-2xl pt-4">
+            <button class="actionBtn bg-[#50cbdb] text-white p-1" id="clearBtn">CE</button>
+            <button class="actionBtn bg-[#50cbdb] text-white p-2" onclick="appendToDisplay('+/-')">+/-</button>
+            <button class="actionBtn bg-[#50cbdb] text-white p-2" onclick="appendToDisplay('%')">%</button>
+            <button class="actionBtn bg-[#50cbdb] text-white p-2" onclick="appendToDisplay('/')">/</button>
+            <button class="darkBg bg-[#f3f8fe] font-semibold" onclick="appendToDisplay('7')">7</button>
+            <button class="darkBg bg-[#f3f8fe] font-semibold" onclick="appendToDisplay('8')">8</button>
+            <button class="darkBg bg-[#f3f8fe] font-semibold" onclick="appendToDisplay('9')">9</button>
+            <button class="actionBtn bg-[#50cbdb] text-white p-2" onclick="appendToDisplay('*')">*</button>
+            <button class="darkBg bg-[#f3f8fe] hover:bg-[#f3f8ff] font-semibold" onclick="appendToDisplay('4')">4</button>
+            <button class="darkBg bg-[#f3f8fe] font-semibold" onclick="appendToDisplay('5')">5</button>
+            <button class="darkBg bg-[#f3f8fe] font-semibold" onclick="appendToDisplay('6')">6</button>
+            <button class="actionBtn bg-[#50cbdb] text-white p-2" onclick="appendToDisplay('-')">-</button>
+            <button class="darkBg bg-[#f3f8fe] p-2 font-semibold" onclick="appendToDisplay('1')">1</button>
+            <button class="darkBg bg-[#f3f8fe] p-2 font-semibold" onclick="appendToDisplay('2')">2</button>
+            <button class="darkBg bg-[#f3f8fe] p-2 font-semibold" onclick="appendToDisplay('3')">3</button>
+            <button class="actionBtn addBtn row-span-2 bg-[#50cbdb] text-white p-2 font-semibold" onclick="appendToDisplay('+')">+</button>
+            <button class="darkBg bg-[#f3f8fe] font-semibold" onclick="appendToDisplay('0')">0</button>
+            <button class="darkBg bg-[#f3f8fe]" onclick="appendToDisplay('.')">.</button>
+            <button class="actionBtn bg-[#50cbdb] text-white p-2" id="calculateBtn">=</button>
+        </div>
+    </div>
+
+
+
+    <script src="learning.js"></script>
+</body>
+</html>

@@ -85,8 +85,11 @@ document.getElementById("registerBtn").addEventListener("click", function (event
 });
 
 // Close alert when OK button is clicked
-document.getElementById("closeAlert").addEventListener("click", function () {
-    hideCustomAlert();
+// document.getElementById("closeAlert").addEventListener("click", function () {
+//     hideCustomAlert();
+// });
+document.querySelector("#closeAlert").addEventListener("click", function() {
+hideCustomAlert();
 });
 
 let firstName = ["doe","angela", "alice"]
@@ -95,3 +98,5 @@ function map(){
    let firstNameUpper = firstName.map( name => name.toUpperCase());
     console.log(firstNameUpper);
 }
+
+console.log(typeof null)

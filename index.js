@@ -71,4 +71,33 @@
         moonIcon.style.display = "inline-block";
     });
 
+    let cal1;
+    let cal2;
+    let cal3;
+    let setCall = false;
 
+const ansTxt = document. getElementById("ansTxt")
+const sumTxt = document.getElementById("sumTxt")
+
+
+
+function test(x){
+    if(setCall == false){
+        cal1 = x
+        setCall = true
+    }else{
+        cal2 = x
+        ansTxt.innerText = cal1 + cal2 
+        setCall = false
+    }
+}
+
+
+let brand;
+let packs = "false"
+
+const upperCased = (text) => {
+   let toUpper = text.toUpperCase()
+    // alert(toUpper)
+}
+upperCased(packs)
